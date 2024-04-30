@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Delius+Unicase:wght@400;700&display=swap');
+
+* {
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    transition: 0.2s linear;
+}
+
+body,
+html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+    background-color: #E4F4FF;
+    color: white;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1E3F62;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+nav ul li a:hover {
+    color: #E4F4FF;
+    background: #1E3F62;
+}
+
+nav ul li a.active {
+    color: #E4F4FF;
+    background: #1E3F62;
+}
+
+#menu-icon {
+    font-size: 38px;
+    z-index: 10001;
+    cursor: pointer;
+    color: #1E3F62;
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.section-1 {
+    background-color: #fff;
+    position: relative;
+}
+
+.section-1 h1, 
+.section-1 h2, 
+.section-1 h3, 
+.section-1 p {
+    text-align: left;
+}
+
+.section-1 h1, 
+.section-1 h2, 
+.section-1 h3 {
+    line-height: 1em;
+}
+
+.section-1 p {
+    line-height: 1.5em;
+}
+
+.section-1 h1,
+.section-1 h2 {
+    font-family:'Delius Unicase', cursive;
+}
+
+.section-1 h1, 
+.section-1 h2,
+.section-1 p {
+    color: #2d3134;
+}
+
+.section-1 h3 {
+    color: #8e8e8e;
+}
+
+.section-1 h4 {
+    text-align: left;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+.section-without-navlist {
+    padding-top: 80px; /* Sesuaikan dengan tinggi header */
+}
+
+footer {
+    background-color: #E4F4FF;
+    color: #2d3134;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    right: 35px;
+    color: #1E3F62;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        position: relative;
+    }
+
+    #menu-icon {
+        font-size: 38px;
+        z-index: 10001;
+        cursor: pointer;
+        color: #1E3F62;
+        display: initial; /* Menampilkan menu-icon pada layar kurang dari 500px */
+        position: absolute;
+        top: 23px;
+        left: 88%;
+    }
+
+    .navlist {
+        height: 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #E4F4FF;
+        transition: 0.5s;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navlist.active {
+        height: 160px; /* Sesuaikan tinggi dengan jumlah menu */
+    }
+
+    .navlist a {
+        display: block;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+    .navlist ul li a {
+        text-decoration: none;
+        color: #1E3F62;
+        font-weight: bold;
+        padding: 10px 15px;
+        transition: 0.2s;
+        margin: 0 5px;
+    }
+
+    .navlist ul li a:hover {
+        color: #E4F4FF;
+        background: #1E3F62;
+    }
+
+    .section-1 h1, 
+    .section-1 h2, 
+    .section-1 h3,
+    .section-1 h4, 
+    .section-1 p {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .gotopbtn {
+        right: 5px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlangEd-Yio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" id="logo"></a>
+        </div>
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="chat.html" class="active">CHAT</a></li>
+                <li><a href="article.html">ARTICLE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+              </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>SlangEdu With Yio!</h1>
+            <p>Let's discover the fun of learning slang together with SlangEd-Yio! Chat with Yio to start the learning adventure.</p>
+            <div class="button">
+                <a href="chat.html" class="btn">Chat Now!</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="img/Yio.png">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/what 2.png">
+        </div>
+
+        <div class="text-content">
+            <span>Introduction</span>
+            <h2>What is SlangEd-Yio?</h2>
+            <p>SlangEd-Yio is here to transform learning slang into a delightful adventure! Meet Yio, our learning assistant, and explore popular slang terms together. Let's make learning a moment full of excitement!</p>
+        </div>
+    </section>
+    
+    <a href="#" class="gotopbtn"> <i class="ri-arrow-up-circle-line"></i></a>
+
+    <footer>
+        <p>&copy; 2024 Najwa Adlina</p>
+    </footer>
+    <script src=""></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menu-icon');
+            const navList = document.querySelector('.navlist');
+
+            menuIcon.addEventListener('click', function () {
+                navList.classList.toggle('active');
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 500) {
+                    navList.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

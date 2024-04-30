@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Delius+Unicase:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--NAVLIST-->
+        <div id="logo-container">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" id="logo"></a>
+        </div>
+    
+        <nav>
+            <ul class="navlist">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="chat.html">CHAT</a></li>
+                <li><a href="article.html" class="active">ARTICLE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </nav>
+    </header>
+        <!--NAVLIST-->
+
+       <!-- Section 1 -->
+       <section class="section-1">
+        <div class="content">
+            <h1>Slang Education with Yio</h1>
+            <p>SlangEd-Yio invites you to decipher the code of slang in a fun way! Our mission is to provide an enjoyable learning experience, where Yio will guide you through a collection of popular slang terms. Let's explore together and add some color to your slang dictionary!</p>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section-2">
+        <div class="content">
+            <div class="grid-left">
+                <h2>Who is Yio?</h2>
+                <p>Yio, the chubby cat, is the mascot of SlangEd-Yio, a unique chatbot or learning assistant dedicated to guiding users in answering their questions about slang terms through the chat platform. With its cute appearance, Yio is a loyal companion, making the experience of learning slang warmer and more enjoyable.</p>
+            </div>
+            <div class="grid-right">
+                <img src="img/yioprof.png" alt="Yio's Image" id="yioo img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+<section class="section-3" id="section-3">
+    <div class="content section-3-content">
+        <div class="grid-left">
+            <h1>Meet Najwa</h1>
+            <p>Najwa Adlina, the person behind SlangEd-Yio, holds the principle that we have the potential to mutually provide beneficial things to others, sharing what we have. Najwa belief creates the foundation for SlangEd-Yio to contribute positively and meaningfully to users through enjoyable understanding and learning.</p>
+        </div>
+        <div class="grid-right">
+            <div class="grid-right">
+                <div class="about-najwa">
+                    <div class="box">
+                        <img src="img/Najwa.jpg" alt="Najwa's Image"> 
+                        <h3>Najwa Adlina</h3>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/najwaadln/"><i class="ri-instagram-line"></i></a>
+                            <a href="https://www.linkedin.com/in/najwa-adlina-322835265/"><i class="ri-linkedin-box-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <a href="#" class="gotopbtn"> <i class="ri-arrow-up-circle-line"></i></a>
+
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2024 Najwa Adlina</p>
+    </footer>
+    <!--FOOTER-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.getElementById('menu-icon');
+            const navList = document.querySelector('.navlist');
+
+            menuIcon.addEventListener('click', function () {
+                navList.classList.toggle('active');
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 500) {
+                    navList.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

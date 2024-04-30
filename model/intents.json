@@ -1,0 +1,643 @@
+{"intents": [
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hi", "Hello", "Hallo", "Helo", "Hello", "Ping", "Yuhuu", "Hi Yio", "Halo Yio"],
+        "responses": ["Hello!", "Hi", "Hello, is there anything I can help with?", "Hello, welcome", "Hey, buddy!", "Hey there!", "What's up?", "Hola! Yio is ready to answer your questions"]
+    },
+
+    {
+        "tag": "about",
+        "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+        "responses": ["I.m Yio, your bot assistant", "I'm Yio, nice to meet you!"]
+    },
+
+    {
+        "tag": "name",
+        "patterns": ["what is your name", "what should I call you", "whats your name?"],
+        "responses": ["You can call me Yio.", "I'm Yio!", "Just call me as Yio"]
+    },    
+
+    {
+        "tag": "study",
+        "patterns": ["Let's study together, Yio!", "Can I ask a question?", "Let's study together!"],
+        "responses": ["Ready! Yio will accompany you in studying all day xixi", "Feel free to ask questions", "Sure! Let's have a study date!"]
+    },      
+
+    {
+        "tag": "slang",
+        "patterns": ["What is slang?", "What does slang mean?", "Slang", "What is slang?", "Slang is", "Can I ask, what is slang?", "Yio, I want to ask, what is slang?"],
+        "responses": ["Slang is an informal language generally used within a specific group or in specific situations.", "In Indonesian, slang means colloquial language. It usually appears in conversations on social media and is often used among close friends.", "Slang or colloquial language is a term that uses informal language. It is typically used when chatting with close friends.", "According to Encyclopædia Britannica, slang is unconventional words or phrases that express something new or something old in a new way. It is casual, disrespectful, impolite; it can be vulgar or indecent. In conclusion, slang is a very informal language."]
+    },
+
+    {
+        "tag": "no cap",
+        "patterns": ["no cap", "What is no cap?", "What does no cap mean?", "no cap is"],
+        "responses": ["No cap in Indonesian means “jujur deh”, “gak bohong!”, “serius weh!”, “beneran deh gak boong”", "No cap is slang used to express honesty or truth.", "No cap means honest, often used as a way to emphasize that what is said is serious or without joking. No cap is the opposite of the phrase 'to cap,' which means to lie. So, 'no cap' literally means not lying."]
+    },
+
+    {
+        "tag": "contoh_no cap",
+        "patterns": ["examples of no cap", "give examples of no cap", "no cap sentence examples"],
+        "responses": [ "“aespa's performance yesterday was really cool, no cap!” (“Kemarin penampilan aespa keren banget, gak bohong!”)", "“Her new song is fire, no cap.” (“Lagu barunya keren banget, sumpah deh.”)", "“You looks amazing today. No cap!” (“Kamu kelihatan luar biasa hari ini. Serius!”)"]
+    },
+
+    {
+        "tag": "slaps",
+        "patterns": ["Slaps", "What is slaps?", "What does slaps mean?", "Slaps is"],
+        "responses": ["Slaps means 'excellent' or 'impressive.' Often used to express admiration or satisfaction with something.", "Slaps is used to express that something, like music or food, is great, delicious, or entertaining.", "Slaps: impressive, great, excellent"]
+    },
+
+    {
+     "tag": "contoh_slaps",
+     "patterns": ["examples of slaps", "give examples of slaps", "slaps sentence examples"],
+     "responses": ["“The movie we watched last night totally slaps; it's one of the best I've seen in a while.” (“Film yang kita tonton semalam benar-benar bagus; salah satu yang terbaik yang pernah saya tonton dalam waktu yang lama.”)", "“NCT 127 new song absolutely slaps; I can't stop listening to it.” (“Lagu baru NCT 127 keren banget; aku nggak bisa berhenti mendengarkannya.”)", "“This cilor slaps! You have to taste it.”(“Cilornya enak banget! Kamu harus cobain.”)" ]
+    },
+
+    {
+        "tag": "simp",
+        "patterns": ["simp", "apa itu simp?", "simp artinya?", "simp adalah"],
+        "responses": ["Simp means someone who is obsessed with someone or something (idol, anime, etc.).", "Simp in Indonesian can be described as overly adoring, in slang terms, it's 'bucin' or 'budak cinta'.", "Simp is someone who does a lot of nice things for someone or something they like but doesn't receive much (or anything) in return."]
+    },
+    
+    {
+     "tag": "contoh_simp",
+     "patterns": [ "examples of simp", "give examples of simp", "simp sentence examples"],
+     "responses": ["“Gio is simping on Claire and it's so cringe-worthy.” (“Gio terlalu memuja Claire, dan itu terlihat sangat memalukan.”)", "“Miko is such a simp for Raya, he's always doing things for her but she doesn't seem interested.” (Miko sangat menyukai Raya, dia selalu melakukan banyak hal untuknya tetapi sepertinya Raya tidak tertarik.)", "“I'm simping over fictional man.” (“Aku lebih bucin sama cowok fiksi.”)"]
+    },
+   
+    {
+        "tag": "bet",
+        "patterns": ["bet", "What is bet?", "bet means?", "bet is"],
+        "responses": ["Bet is slang used contextually; it can be used to agree or affirm a statement, express confidence, or place a bet.", "Bet is a shortened version of 'you bet' or 'bet on it,' used to express confidence, make a bet, or agree with a statement.", "Bet: agreeing, or it can also mean a bet."]
+    },
+    
+    {
+     "tag": "contoh_bet",
+     "patterns": ["examples of bet", "give examples of bet", "bet sentence examples"],
+     "responses": ["“I bet you will like him when you see him in person.” (“Aku yakin pasti nanti kamu langsung suka sama dia kalau udah liat secara langsung.”)", "A:“I bet you can't finish two bowls of noodles.” B:“Wanna bet?” (A:“Aku yakin kamu gak akan bisa menghabiskan dua mangkuk mie.” B:“Berani bertaruh?”)", "A: “Do you think we can finish the project by tomorrow?” B: “Bet, we got this.” (A: “Kamu yakin gak kita bisa selesaiin proyek ini besok?” B: “Pasti, kita bisalah.”)"]
+    },
+
+    {
+        "tag": "screw up",
+        "patterns": ["screw up", "What is screw up?", "What does screw up mean?", "screw up is"],
+        "responses": ["Screw up is usually used to express that someone has made a mistake or messed up a situation.", "Screw up means to create chaos.", "Screw up: causing a mess."]
+    },
+    
+    {
+     "tag": "contoh_screw up",
+     "patterns": ["examples of screw up", "give examples of screw up", "screw up sentence examples"],
+     "responses": ["“I really screwed up the presentation at class today.” (“Aku benar-benar membuat kesalahan dalam presentasi di kelas hari ini.”)", "“Imagine how badly the thief had screwed up and angered the people.” (“Bayangkan betapa parahnya pencuri itu mengacau dan membuat marah orang-orang.”)", "“You screwed up the party.” (“Kamu mengacaukan pestanya.”)"]
+    },
+
+    {
+        "tag": "chinwag",
+        "patterns": ["chinwag", "What is chinwag?", "What does chinwag mean?", "chinwag is"],
+        "responses": ["Chinwag is a slang term originating from British English, usually used to refer to casual chat or gossip.", "Chinwag means gossip or a long and enjoyable conversation with friends.", "Chinwag: gossiping or having a long chat with friends."]
+    },
+
+    {
+     "tag": "contoh_chinwag",
+     "patterns": ["examples of chinwag", "give examples of chinwag", "chinwag sentence examples"],
+     "responses": ["“Let's grab a cup of coffee and have a chinwag.” (“Ayo kita minum kopi dan ngobrol santai.”)", "“He's having a chinwag with his friend.” (“Dia sedang mengobrol dengan temannya.”)", "“Ah, she always chinwag with her friends at the back of the class.” (“Ah, dia selalu bergosip dengan teman-temannya di belakang kelas.”)"]
+    },
+
+    {
+        "tag": "lippie",
+        "patterns": ["lippie", "What is lippie?", "lippie means?", "lippie is"],
+        "responses": ["Lippie is short for 'lipstick.'", "Lippie is informal or slang for lipstick or cosmetic products used on the lips."]
+    },
+
+    {
+     "tag": "contoh_lippie",
+     "patterns": ["examples of lippie", "give examples of lippie", "lippie sentence examples"],
+     "responses": ["“I love that shade of lippie you're wearing!” (“Aku suka warna lipstik yang kamu pakai!”)", "“Which lippie shades do you use?” (“Warna lippie apa yang kamu gunakan?”)"]
+    },
+
+    {
+        "tag": "brekky",
+        "patterns": ["brekky", "What is brekky?", "brekky means?", "brekky is"],
+        "responses": ["Brekky or brekkie is a shortened version of the word 'breakfast,' which means a morning meal.", "Brekky comes from the word 'Breakfast,' which means breakfast or morning meal."]
+    },
+    
+    {
+        "tag": "contoh_brekky",
+        "patterns": ["examples of brekky", "give examples of brekky", "brekky sentence examples"],
+        "responses": ["“Let's meet for brekky tomorrow.” (“Yuk, ketemuan sarapan besok!”)", "“What's for brekkie?”(“Mau sarapan apa hari ini?”)"]
+    },
+
+    {
+        "tag": "delulu",
+        "patterns": ["delulu", "What is delulu?", "delulu means?", "delulu is"],
+        "responses": ["Delulu is an abbreviation of 'delusional,' usually used to refer to someone who has thoughts or beliefs that are inconsistent with reality or unrealistic.", "Delulu: delusional, or the current slang term is daydreaming or being hallucinative.", "Delulu: hallucinating, daydreaming, unrealistic."]
+    },
+    
+    {
+        "tag": "contoh_delulu",
+        "patterns": ["examples of delulu", "give examples of delulu", "delulu sentence examples"],
+        "responses": ["“Don't be delulu, he doesn't like you. He was nice to everyone.” (“Jangan menghayal, dia tuh gak suka sama kamu. Dia memang baik ke semua orang.”)", "“I'm delulu because I want someone I know I can't have.” (“Aku delusional karena aku ingin seseorang yang aku tahu gak bisa aku miliki.”)", "“She's delulu if she thinks she could be Taeyong's wife.” (“Dia halu jika dia berpikir dia bisa menjadi istri Taeyong.”)"]
+    },
+
+    {
+        "tag": "yakking",
+        "patterns": ["yakking", "What is yakking?", "yakking means?", "yakking is"],
+        "responses": ["Yakking is when someone talks continuously or at length without stopping and doesn't give others a chance to speak.", "Yakking: a person who talks endlessly and doesn't give others a chance to talk.", "Yakking is someone who endlessly talks and doesn't give time for others to speak."]
+    },  
+    
+    {
+        "tag": "contoh_yakking",
+        "patterns": ["examples of yakking", "give examples of yakking","yakking sentence examples"],
+        "responses": ["“She's been yakking on the phone for hours, I can't get a word in!” (“Dia sudah berbicara terus di telepon selama berjam-jam, saya sampai gak bisa bicara sedikitpun!”)", "“The professor kept yakking about the complexities of the theory without giving us a chance to ask questions.” (“Profesor terus-menerus berbicara tentang kompleksitas teori tanpa memberi kami kesempatan untuk bertanya.”)", "“I'm lazy when it comes to chatting with him. Because he keeps yakking. That makes my head hurt.” (“Aku terlalu malas untuk berbicara dengannya. Karena dia terus mengoceh. Itu membuat kepalaku sakit.”)"]
+    },
+
+    {   "tag": "cheugy",
+        "patterns": ["cheugy","What is cheugy?", "cheugy means?","cheugy is"],
+        "responses": ["Cheugy is usually used to describe something considered outdated or uncool, especially in terms of style or trends.", "Cheugy is something considered less fashionable.", "Cheugy is a term commonly used to describe something that is considered outdated."]
+    }, 
+    
+    {
+        "tag": "contoh_cheugy",
+        "patterns": ["examples of cheugy", "give examples of cheugy", "cheugy sentence examples"],
+        "responses": ["“Her taste in home decor is a bit cheugy with all those outdated patterns and colors.” (“Selera dekorasi rumahnya agak cheugy dengan semua pola dan warna yang ketinggalan zaman.”)", "“His body wass very proportional, but his taste in clothes was a bit cheugy.” (“Tubuhnya sangat proporsional, tetapi seleranya dalam berpakaian agak kurang modis.”)", "“They say my skirt style is outdated but it's vintage bro.” (“Mereka bilang gaya rok aku ketinggalan jaman, tapi ini vintage, bro.”)"]
+    },
+
+    {
+        "tag": "L + ratio",
+        "patterns": ["l + ratio", "What is l + ratio?", "l + ratio means?","l + ratio is"],
+        "responses": ["\"L + ratio\" is a term used to mock or comment on someone who, in subjective judgment, experiences 'defeat or failure in a situation.'", "\"L\" in this context refers to 'loss,' and 'ratio' indicates a high proportion of negative replies compared to the number of likes or reposts.", "L + ratio is used as a mocking insult on social media, often as a response to posts or opinions considered very bad."]
+    },  
+    
+    {
+        "tag": "contoh_l + ratio",
+        "patterns": ["examples of l + ratio", "give examples of l + ratio","l + ratio sentence examples"],
+        "responses": ["“After that project, his colleagues joked about his L + ratio in handling responsibilities.” (“Setelah proyek itu, rekan-rekannya bercanda tentang L + rasionya dalam menangani tanggung jawab.”)", "“Look at his L + ratio when it comes to dating; he really needs some advice.” (“Lihatlah L + rasionya dalam urusan kencan; dia benar-benar membutuhkan beberapa saran.”)", "“L + ratio + unfollow + block + You eat Nasi Padang using a spoon and fork.”(“L + rasio + berhenti mengikuti + blokir + kamu makan nasi padang pakai sendok dan garpu.”)"]
+    },
+
+    {
+        "tag": "pick me",
+        "patterns": ["pick me", "What is pick me?", "pick me means?","pick me is"],
+        "responses": ["Literally, 'pick-me' means 'choose me.' The term is addressed to women (or men) who crave attention and recognition from the opposite gender.", "Pick-me is a term for a woman/man who feels they are the most different because they crave recognition from the opposite gender.","Pick-me means someone, especially in the context of women, who tries to attract attention or gain approval from the opposite sex by presenting themselves as an ideal or different from others."]
+    },  
+    
+    {
+        "tag": "contoh_pick me",
+        "patterns": ["examples of pick me", "give examples of pick me","pick me sentence examples"],
+        "responses": ["“Stop being such a pick-me; you don't need to prove your worth to anyone.” (“Berhenti menjadi pick-me; kamu tidak perlu membuktikan nilai dirimu kepada siapapun.”)", "“He's constantly feels better than other men. Totally pick-me behavior.” (“Dia selalu merasa lebih baik dari pria lain. Benar-benar perilaku pick-me.”)", "“She always says “I'm different from other girls” in front of men. She's a real pick-me.” (“Dia selalu mengatakan “Aku tuh beda dari cewek-cewek lain” di depan para pria. Dia benar-benar pick-me.”)"]
+    },
+
+    {
+        "tag": "IMHO",
+        "patterns": ["imho", "What is imho?", "imho means?","imho is"],
+        "responses": ["IMHO is an abbreviation for 'In My Humble Opinion' in English, which means 'Menurut pendapat saya yang sederhana' in Indonesian. It is commonly used to express personal opinions.", "IMHO or 'In My Humble Opinion' is typically used to convey a personal opinion that what is expressed is a subjective view.", "IMHO (In My Humble Opinion) is an expression to politely convey personal opinions. This abbreviation is commonly used in texting."]
+    },  
+    
+    {
+        "tag": "contoh_imho",
+        "patterns": ["examples of imho", "give examples of imho","imho sentence examples"],
+        "responses": ["“IMHO, the new policy will benefit both employees and the company in the long run.” (“Menurut pendapat saya yang sederhana, kebijakan baru ini akan menguntungkan baik karyawan maupun perusahaan dalam jangka panjang.”)", "“The movie was, IMHO, one of the most captivating films of the year.” (“Film itu, menurut pendapat saya yang sederhana, salah satu film paling memikat tahun ini.”)", "“IMHO, you're both wrong about guessing his thoughts.” (“Menurut pendapat saya yang sederhana, kalian berdua salah dalam menebak pikirannya.”)"]
+    },
+
+    {
+        "tag": "Iffy",
+        "patterns": ["iffy", "What is iffy?", "iffy means?","iffy is"],
+        "responses": ["Iffy in slang means something uncertain, not sure, or unclear.", "Iffy (slang) briefly means uncertain.", "Uncertain, not sure."]
+    },  
+    
+    {
+        "tag": "contoh_iffy",
+        "patterns": ["examples of iffy", "give examples of iffy","iffy sentence examples"],
+        "responses": ["“The weather is kind of iffy today, so we'll leave tomorrow.” (“Cuaca hari ini sedikit tidak dapat diprediksi, jadi kami akan berangkat besok.”)", "“My current financial situation is iffy.” (“Situasi keuangan saya saat ini tidak menentu.”)", "“Look, all I know is that the dessert looks iffy. But I don't know what it tastes like, it might be good.” (“Lihat, yang aku tahu penampilan dessert-nya terlihat meragukan. Tapi gak tau deh rasanya, mungkin enak.”)"]
+    },
+
+    {
+        "tag": "ONG",
+        "patterns": ["ONG", "What is ONG?", "ONG means?","ONG is"],
+        "responses": ["ONG is an abbreviation of 'on God,' which means 'I swear to God.' It is used to express honesty, opinions, or strong emotions. More commonly used in texting on social media.", "ONG or 'on God' is a typo derived from OMG. It is typically used to express honesty, opinions, and strong emotions convincingly.", "ONG in Indonesian means 'Sumpah demi Tuhan' or 'itu kehendak Tuhan.'"]
+    },  
+    
+    {
+        "tag": "contoh_ONG",
+        "patterns": ["examples of ONG", "give examples of ONG","ONG sentence examples"],
+        "responses": ["“Ong I have never felt this tired before.” (“Sumpah deh, aku gak pernah ngerasa cape kaya gini sebelumnya.”)", "“Squidward is just like me ong fr.” (“Sumpah, squidward benar-benar mirip sama aku.”)", "“ONG I never told anyone that you like Kai.” (“Sumpah demi Tuhan, Aku gak pernah bilang ke siapa pun kalau kamu suka sama Kai.”)"]
+    },
+
+    {
+        "tag": "ACE",
+        "patterns": ["ACE", "What is ACE?", "ACE means?","ACE is"],
+        "responses": ["ACE means something excellent or someone skilled, best, proficient, or doing something very well.", "ACE is often used as a term for someone who is skilled in a particular field, whether it be sports or games.", "ACE: something excellent, someone talented."]
+    },  
+    
+    {
+        "tag": "contoh_ACE",
+        "patterns": ["examples of ACE", "give examples of ACE","ACE sentence examples"],
+        "responses": ["“You're going to ace this test.” (“Kamu akan menjadi yang terbaik di tes ini.”)", "“I aced my final test yesterday!” (“Aku mengerjakan ujian akhirku dengan sangat baik kemarin!”)", "“Luckily, we have an ace of spades among us.” (“Untungnya, kita punya jagoan atau kartu as di antara kita.”)"]
+    },
+
+    {
+        "tag": "AFAIK",
+        "patterns": ["AFAIK", "What is AFAIK?", "AFAIK means?","AFAIK is"],
+        "responses": ["AFAIK stands for 'As Far As I Know' in English, which means 'sejauh yang aku ketahui' in Indonesian.", "AFAIK (As Far As I Know) is used to imply that the given information may not be complete or is based on limited knowledge.", "AFAIK is an abbreviation for 'As Far As I Know,' conveying information based on limited knowledge. Commonly used in texting."]
+    },  
+    
+    {
+        "tag": "contoh_AFAIK",
+        "patterns": ["examples of AFAIK", "give examples of AFAIK","AFAIK sentence examples"],
+        "responses": ["“The office is closed today, AFAIK, due to some technical issues.” (“Kantor tutup hari ini, sejauh yang saya tahu, karena ada beberapa gangguan teknis.”)", "“AFAIK, the project deadline is still set for next Friday, but I'll double-check.” (“Sejauh yang saya tahu, batas waktu proyek masih dijadwalkan untuk Jumat depan, tetapi saya akan memeriksanya lagi.”)"]
+    },
+
+    {
+        "tag": "ETA",
+        "patterns": ["ETA", "What is ETA?", "ETA means?","ETA is"],
+        "responses": ["ETA is an abbreviation for 'Estimated Time of Arrival,' which means the expected time someone or something will arrive at a destination. Usually used to inquire about someone's estimated arrival time. Common in texting.", "ETA (Estimated Time of Arrival) is commonly used to ask about the estimated time someone will arrive at a meeting place. Typically used in texting.", "ETA is an acronym for 'Estimated Time of Arrival,' often used in texting."]
+    },  
+    
+    {
+        "tag": "contoh_ETA",
+        "patterns": ["examples of ETA", "give examples of ETA","ETA sentence examples"],
+        "responses": ["“I'm on my way; my ETA is around 15 minutes.” (“Saya dalam perjalanan; perkiraan waktu kedatangan saya sekitar 15 menit.”)", "“Can you let me know your ETA?” (“Bisakah kamu memberi tahu saya perkiraan waktu kedatanganmu?”)", "“The app shows the ETA package at around 12 noon.” (“Aplikasi ini menunjukkan perkiraan waktu kedatangan paket sekitar pukul 12 siang.”)"]
+    },
+
+    {
+        "tag": "icky",
+        "patterns": ["icky", "What is icky?", "icky means?","icky is"],
+        "responses": ["Icky is used to express a feeling of discomfort or unpleasantness, often related to something that looks or feels gross.", "Slang icky is usually used to express discomfort towards something considered dirty, sticky, or repulsive."]
+    },  
+    
+    {
+        "tag": "contoh_icky",
+        "patterns": ["examples of icky", "give examples of icky","icky sentence examples"],
+        "responses": ["“I always wear slippers in the kitchen because it's sticky and icky.” (“Aku selalu pakai sandal di dapur, karena lantainya lengket dan menjijikkan.”)", "“Huh, I don't like the texture, it's icky.” (“Huh, Aku gak suka teksturnya, lengket .”)", "“The pond water looked a bit icky, so we decided not to swim in it.” (“Air kolam tampak agak menjijikkan, jadi kami memutuskan untuk tidak berenang di dalamnya.”)"]
+    },
+
+    {
+        "tag": "Nah",
+        "patterns": ["nah", "What is nah?", "nah means?","nah is"],
+        "responses": ["Nah or 'no' is used to reject something.", "Nah is used to express rejection or disagreement in a casual manner.", "Nah is an informal form of 'no' used to refuse or express disagreement."]
+    },  
+    
+    {
+        "tag": "contoh_nah",
+        "patterns": ["example of nah", "give example of nah", "nah sentence examples" ],
+        "responses": ["A: “Do you want to go to the movies tonight?” B:“Nah, I'm not in the mood. Let's do something else.” (A: “Mau pergi nonton film malam ini?” B: “Enggak deh, saya lagi nggak mood. Mari kita lakukan yang lain.”)", "A: “Mau datang ke pesta?” B:“Nah, I have an early morning meeting tomorrow.” (A: “Mau datang ke pesta?” B: “Enggak deh, besok pagi saya ada rapat awal”)", "“Nah, I'll do it later.” (“Tidak, saya akan melakukannya nanti.”)"]
+    },
+
+    {
+        "tag": "Cranky",
+        "patterns": ["Cranky", "what does cranky mean?", "cranky is", "what is cranky?"],
+        "responses": ["Cranky is a term used to express that someone is in a state of anger, irritability, or easily offended.", "Cranky: easily angered, easily upset, easily offended.", "Cranky describes someone or something that is currently in a state of anger or irritation."]
+    },  
+    
+    {
+        "tag": "contoh_cranky",
+        "patterns": ["examples of cranky", "give examples of cranky", "cranky sentence examples"],
+        "responses": ["“Don't talk to him when he's in a cranky mood.” (“Jangan bicara dengannya ketika dia sedang dalam mood yang kesal.”)", "“The baby is cranky because she missed her afternoon nap.” (“Bayi itu rewel karena dia melewatkan tidur siangnya.”)", "“A lot of problems today and it made me cranky.” (“Banyak masalah hari ini dan itu membuat saya kesal.”)"]
+    },
+
+    {
+        "tag": "LMAO",
+        "patterns": ["LMAO", "What does LMAO mean?", "LMAO is", "what is LMAO?"],
+        "responses": ["LMAO is an abbreviation for the English phrase 'Laughing My Ass Off,' which means laughing a lot or laughed out loud.", "LMAO is an abbreviation for the English phrase 'Laughing My Ass Off,' which means laughing a lot or 'ngakak banget.'", "LMAO is usually used in online conversations to state that something is very funny, causing hearty laughter."]
+    },  
+    
+    {
+        "tag": "contoh_LMAO",
+        "patterns": ["examples of LMAO", "give examples of LMAO", "LMAO sentence examples"],
+        "responses": ["“Her funny TikTok videos always make me LMAO; she has a great sense of humor.” (“Video TikTok-nya yang lucu selalu membuatku ngakak, dia memiliki selera humor yang baik.”)", "“That joke you told was hilarious! I was LMAO the entire time.” (Lawakan yang kamu ceritakan sangat lucu! Saya tertawa dengan sangat sepanjang waktu.”)", "“I just watched a comedy special, and it had me LMAO from start to finish.” (“Saya baru saja menonton sebuah film komedi, dan itu membuat saya tertawa terbahak-bahak dari awal hingga akhir.”)"]
+    },
+
+    {
+        "tag": "pretty sus",
+        "patterns": ["pretty sus", "what does pretty sus mean?", "pretty sus is", "waht is pretty sus?"],
+        "responses": ["Pretty sus is short for 'pretty suspicious,' meaning very suspicious or strange. It's often used to accuse someone of engaging in highly suspicious behavior.",    "Pretty sus or pretty suspicious is often used in situations where someone or something is considered suspicious."]
+    },  
+    
+    {
+        "tag": "contoh_pretty sus",
+        "patterns": ["examples of pretty sus", "give examples of pretty sus", "pretty sus sentence examples"],
+        "responses": ["“His alibi seems pretty sus. I don't think he was really at the party.” (“Alibinya terlihat sangat mencurigakan. Saya rasa dia tidak benar-benar berada di pesta.”)", "“The way she reacted to the question was pretty sus, it's like she's hiding something.” (“Cara dia bereaksi terhadap pertanyaan sangat mencurigakan, seolah-olah dia sedang menyembunyikan sesuatu.”)", "“That was pretty sus.” (“Itu sangat mencurigakan.”)"]
+    },
+
+    {
+        "tag": "slay",
+        "patterns": ["slay", "What does slay mean?","slay is", "what is slay?"],
+        "responses": ["Slay is used to express that someone or something has successfully performed impressively or achieved something good.", "Slay (slang) can be interpreted as cool, great, amazing."]
+    },  
+    
+    {
+        "tag": "contoh_slay",
+        "patterns": ["examples of slay", "give examples of slay", "slay sentence examples"],
+        "responses": ["“She walked onto the runway and absolutely slayed the fashion show with her confidence and style.” (“Dia berjalan di atas catwalk dan benar-benar membunuh fashion show dengan kepercayaan diri dan gayanya.”)", "“Anton is slayed at dancing, I didn't know that he's could do that.” (Anton sangat menakjubkan saat menari, Aku tidak tahu kalau dia bisa melakukan hal tersebut.”)", "“She is the slay queen.” (“Dia benar-benar keren seperti ratu.”)"]
+    },
+
+    {
+        "tag": "dang",
+        "patterns": ["dang", "What does dang mean?", "dang is"],
+        "responses": ["Dang is another way of saying 'damn,' used when seeing something interesting, expressing surprise, frustration, or cursing.", "Dang is a modification of the coarse word 'damn,' interpreted as 'very,' 'really,' or 'extremely.'", "Dang is a polite version of the word 'damn,' usually used to express astonishment or can also be used to curse."]
+    },  
+    
+    {
+        "tag": "contoh_dang",
+        "patterns": ["examples of dang", "give examples of dang", "dang sentence examples"],
+        "responses": ["“Dang, she’s totally a goddess!” (“Astaga, dia benar-benar seperti dewi!”)", "“Dang it!” (“Sial!”)", "“Dang! It was the biggest cat I've ever seen” (“Woh! Itu adalah kucing terbesar yang pernah saya lihat”)"]
+    },
+
+    {
+        "tag": "duh",
+        "patterns": ["duh", "What does duh mean?", "duh is"],
+        "responses": ["Duh is a response to a question where the answer is obvious and doesn't need to be asked again. Sometimes sounds a bit curt.", "Duh is a response to something that is already clear or doesn't need to be questioned further.", "Duh (/dʌ/) pronounced as 'dah' means 'obviously,' 'of course,' 'definitely,' or in Indonesia like 'pake tanya' or 'ya iya lah' "]
+    },  
+    
+    {
+        "tag": "contoh_duh",
+        "patterns": ["examples of duh", "give examples of duh", "duh sentence examples"],
+        "responses": ["“A: It seems people really need money.” B: “Well, duh.” (“A: “Sepertinya orang-orang benar-benar membutuhkan uang.” B: “Ya iya lah”)", "A:“Do you like money?” B:“Duuuh. Of course I like money. Who doesn’t like money?”(A:“Kamu suka uang?” B:“Duuuh. Tentu saja saya suka uang. Siapa yang tidak suka uang?”)"]
+    },
+
+    {
+        "tag": "ate",
+        "patterns": ["ate", "What does ate mean?", "ate is"],
+        "responses": ["Ate is an expression used to praise someone who has successfully done something. In Indonesian, it's like saying 'keren banget' or 'awesome.'", "Ate in slang means 'super cool,' 'amazing!,' or 'unbeatable.'", "Ate is slang used to express admiration for someone who has succeeded in a task."]
+    },  
+    
+    {
+        "tag": "contoh_ate",
+        "patterns": ["examples of ate", "give examples of ate", "ate sentence examples"],
+        "responses": ["“Ate and left no crumbs” (“Perfect, sempurna.”)", "“Giselle ate Daniel up in the debate.” (“Giselle berhasil mengatasi Daniel dengan sangat baik dalam debat.”)", "“He ate and leave no crumbs” (“Dia keren banget sampai gak ada celah.” atau “Keren banget dia, gak ada lawan”)"]
+    },
+
+    {
+        "tag": "IJBOL",
+        "patterns": ["IJBOL", "What does IJBOL mean?", "IJBOL is"],
+        "responses": ["IJBOL is an abbreviation for 'I Just Burst Out Laughing.' In Indonesian, it means 'ngakak banget' or 'laughed out loud.'", "IJBOL or I Just Burst Out Laughing is usually used in texting. It signifies laughing out loud or bursting into laughter."]
+    },  
+    
+    {
+        "tag": "contoh_IJBOL",
+        "patterns": ["examples of IJBOL", "give examples of IJBOL", "IJBOL sentence examples"],
+        "responses": ["“He told me the clothes I was wearing were like rags ijbol” (“Dia bilang aku baju yang ku pakai seperti kain lap, dan aku langsung ketawa.”)", "“Her expression was really funny, ijbol” (“Ekspresi mukanya lucu banget, jadi aku langsung ngakak liatnya.”)"]
+    },
+
+    {
+        "tag": "Main character energy",
+        "patterns": ["Main character energy", "What does main character energy mean?", "Main character energy is"],
+        "responses": ["Main character energy is used to refer to someone who displays confidence or a striking attitude, as if they are the main character in a story or life.", "Main character energy is often used to describe someone who exudes strong charisma."]
+    },  
+    
+    {
+        "tag": "contoh_Main character energy",
+        "patterns": ["examples of main character energy", "give examples of main character energy", "main character energy sentence examples"],
+        "responses": ["“She walked into the room with that main character energy, and everyone couldn't help but notice.” (“Dia masuk ke dalam ruangan dengan daya tarik yang kuat, dan semua orang pasti memperhatikannya.”)", "“Even in a crowded party, she stands out, she has the energy of the main character.” (“Bahkan di pesta yang ramai, dia menonjol, dia memiliki energi karakter utama.”)"]
+    },
+
+    {
+        "tag": "Side character energy",
+        "patterns": ["Side character energy", "What does side character energy mean?", "Side character energy is"],
+        "responses": ["Side character energy: someone who appears not prominent or like a background character. However, despite the lack of spotlight, they are often liked.", "Side character energy refers to someone who seems less prominent and doesn't receive much attention. Nevertheless, their lack of spotlight is often considered positive or even likable."]
+    },  
+    
+    {
+        "tag": "contoh_side character energy",
+        "patterns": ["examples of side character energy", "give examples of side character energy", "side character energy sentence examples"],
+        "responses": ["“Her vibes are like side character energy.” (“Aura yang dimilikinya seperti energi karakter sampingan.”)", "“Yelena is by far my favorite side character but she’s giving main character energy.” (“Sejauh ini, Yelena adalah karakter sampingan favorit saya, namun dia memberikan energi karakter utama.”)", "“Ha bin vibes is really side character when he's in the reality show. Even though he's the most gentle guy there.” (“Aura Ha bin benar-benar seperti karakter sampingan saat dia berada di reality show. Padahal dia adalah pria yang paling lembut di sana.”)"]
+    },
+
+    {
+        "tag": "friyay",
+        "patterns": ["friyay", "What does friyay mean?", "friyay is"],
+        "responses": ["Friyay is a combination of 'Friday' and 'Yay' (expression of joy). Used as an expression of joy when welcoming the weekend on Fridays.", "Friyay: Friday-Yay. An expression of joy welcoming the weekend.", "Friyay (Friday Yay) is the feeling of happiness when Friday arrives."]
+    },  
+    
+    {
+        "tag": "contoh_friyay",
+        "patterns": ["examples of friyay", "give examples of friyay", "friyay sentence examples"],
+        "responses": ["“Who's excited for friyay?” (“Siapa yang bersemangat untuk menyambut hari raya Jumat?”)", "“It's friyay! Let's celebrate the weekend.” (“Ini hari Jumat! Ayo rayakan liburan akhir pekan.”)", "“Happy Friyay everyone.” (“Selamat hari Jumat semuanya.”)"]
+    },
+
+    {
+     "tag": "love bombing",
+     "patterns": ["love bombing", "What does love bombing mean?", "love bombing is"],
+     "responses": ["Love bombing is the act of giving excessive attention, praise, or affection to someone, especially in interpersonal relationships. It can also refer to manipulative tactics to gain trust or control from others.", "Love bombing: the act of giving excessive attention and affection by a partner with the goal of manipulation."]
+    },
+    
+    {
+     "tag": "contoh_love bombing",
+     "patterns": ["examples of love bombing", "give examples of love bombing", "love bombing sentence examples"],
+     "responses": ["“In the early stages of the relationship, she was love bombing him with constant compliments.” (“Pada awal hubungan, dia selalu melontarkan pujian padanya terus-menerus.”)", "“Did you see how he showered her with gifts and compliments all day? That's some serious love bombing!” (“Apakah kamu lihat bagaimana dia memberinya banyak hadiah dan pujian sepanjang hari? Itu bener-bener sebuah aksi pemujaan yang serius!”)"]
+    },
+
+    {
+        "tag": "lit",
+        "patterns": ["lit", "What does lit mean?", "lit means?", "lit is"],
+        "responses": ["Lit is a slang term that originally meant intoxicated or drunk but has evolved to describe something that is exciting, excellent, or full of energy.", "Lit: originally meaning intoxicated, now used to describe something that is exciting, impressive, or lively.", "When something is described as 'lit,' it means it's vibrant, exciting, or exceptionally good."]
+    },
+
+    {
+        "tag": "contoh_lit",
+        "patterns": ["examples of lit", "give examples of lit", "lit sentence fleek"],
+        "responses": ["“Last night's party was so lit! The music, the energy, everything was amazing..” (“Pesta semalam sangat seru! Musiknya, energinya, semuanya luar biasa.”)"]
+    },
+
+    {
+        "tag": "on fleek",
+        "patterns": ["on fleek", "What does on fleek mean?", "on fleek means?", "define on fleek"],
+        "responses": ["On fleek is a slang term used to describe something that is perfectly styled or looking flawless.", "On fleek: impeccably groomed or styled; looking perfect or flawless.", "If someone's eyebrows, makeup, or outfit is 'on fleek,' it means they are looking exceptionally good and well put together."]
+    },
+
+    {
+        "tag": "contoh_fleek",
+        "patterns": ["examples of fleek", "give examples of fleek", "friyay sentence fleek"],
+        "responses": ["“Her makeup is on fleek today. It looks flawless and perfectly done.” (“Makeup-nya on fleek hari ini. Terlihat sempurna dan rapi.”)"]
+    },
+    
+    {
+        "tag": "bae",
+        "patterns": ["bae", "What does bae mean?", "bae means?", "define bae"],
+        "responses": ["Bae is a term of endearment that stands for 'before anyone else,' commonly used to refer to a significant other or loved one.", "Bae: a term of endearment, short for 'before anyone else,' used to refer to a boyfriend, girlfriend, or significant other.", "Calling someone 'bae' implies that they are your top priority or most important person."]
+    },
+
+    {
+        "tag": "contoh_bae",
+        "patterns": ["examples of bae", "give examples of bae", "bae sentence examples"],
+        "responses": ["“I'm spending Valentine's Day with my bae – the person I love the most.” (“Aku akan menghabiskan Hari Valentine dengan orang yang paling aku cintai.”)"]
+    },
+    
+    {
+        "tag": "fomo",
+        "patterns": ["fomo", "What is fomo?", "fomo means?", "define fomo"],
+        "responses": ["FOMO stands for 'fear of missing out' and refers to the anxiety or apprehension one feels when they think others are having a good time without them.", "FOMO: fear of missing out; the uneasy feeling that others are enjoying experiences without you.", "Experiencing FOMO often leads people to seek social validation and involvement in activities they may not be genuinely interested in."]
+    },
+
+    {
+        "tag": "contoh_fomo",
+        "patterns": ["examples of fomo", "give examples of fomo", "fomo sentence examples"],
+        "responses": ["“I decided to go to the party because I didn't want to experience FOMO while everyone else was having fun.” (“Aku memutuskan untuk pergi ke pesta karena aku tidak ingin merasakan FOMO ketika semua orang sedang bersenang-senang.”)"]
+    },
+    
+    {
+        "tag": "yeet",
+        "patterns": ["yeet", "What does yeet mean?", "yeet means?", "define yeet"],
+        "responses": ["Yeet is a versatile slang term that can be used as an exclamation of excitement, approval, or to describe the act of forcefully throwing something.", "Yeet: an exclamation of enthusiasm or approval; also used to describe throwing something with force.", "When someone says 'yeet,' it's often accompanied by a physical action, such as throwing an object with energy."]
+    },
+    
+    {
+        "tag": "contoh_yeet",
+        "patterns": ["examples of yeet", "give examples of yeet", "yeet sentence examples"],
+        "responses": ["“When he scored the winning goal, he couldn't help but shout 'yeet' in celebration.” (“Saat dia mencetak gol kemenangan, dia tidak tahan untuk berteriak 'yeet' sebagai perayaan.”)", "“Finished my final exams! Yeet, now it's time to relax.” (“Selesai ujian terakhirku! Yeet, sekarang waktunya untuk bersantai.”)", "“He yeeted the ball into the goal with incredible force.” (“Dia melempar bola ke gawang dengan kekuatan yang luar biasa.”)"]
+    },
+
+    {
+        "tag": "chillax",
+        "patterns": ["chillax", "What does chillax mean?", "chillax means?", "define chillax"],
+        "responses": ["Chillax is a blend of 'chill' and 'relax,' used to encourage someone to calm down or take it easy.", "Chillax: a colloquial term combining 'chill' and 'relax,' encouraging someone to stay calm or unwind.", "Instead of telling someone to chill or relax, you might say 'chillax' to convey a more laid-back and friendly tone."]
+    },
+
+    {
+        "tag": "contoh_chillax",
+        "patterns": ["examples of chillax", "give examples of chillax", "chillax sentence examples"],
+        "responses": ["“After a hectic week, I like to chillax on the weekend by watching movies and relaxing.” (“Setelah seminggu yang sibuk, aku suka chillax di akhir pekan dengan menonton film dan bersantai.”)"]
+    },
+    
+    {
+        "tag": "G.O.A.T.",
+        "patterns": ["G.O.A.T.", "GOAT", "What does G.O.A.T. mean?", "G.O.A.T. means?", "G.O.A.T. is", "GOAT is"],
+        "responses": ["G.O.A.T. stands for 'Greatest of All Time' and is used to describe someone or something that is considered the best in their field or category.", "G.O.A.T.: acronym for 'Greatest of All Time,' used to praise someone's exceptional skills or achievements.", "Referring to a person as the G.O.A.T. is a way of acknowledging their unparalleled excellence and achievements."]
+    },
+
+    {
+        "tag": "contoh_G.O.A.T.",
+        "patterns": ["examples of GOAT", "give examples of GOAT", "G.O.A.T. sentence examples"],
+        "responses": ["“Serena Williams is undoubtedly the tennis GOAT; her skills are unmatched.” (“Serena Williams tanpa ragu merupakan GOAT tenis; keahliannya tidak tertandingi.”)"]
+    },
+    
+    {
+        "tag": "lit AF",
+        "patterns": ["lit AF", "What does lit AF mean?", "lit AF means?", "define lit AF"],
+        "responses": ["Lit AF is an intensified version of 'lit,' meaning something is extremely exciting, impressive, or outstanding.", "Lit AF: an intensified form of 'lit,' indicating something is exceptionally exciting or impressive.", "When an event or experience is described as 'lit AF,' it suggests it's not just good but spectacularly so."]
+    },
+
+    {
+        "tag": "contoh_lit AF",
+        "patterns": ["examples of lit AF", "give examples of lit AF", "lit AF sentence examples"],
+        "responses": ["“The party last night was lit AF! The music, the crowd, everything was incredible.” (“Pesta semalam sangat seru! Musiknya, kerumunan orangnya, semuanya luar biasa.”)"]
+    },
+
+    {
+        "tag": "savage",
+        "patterns": ["savage", "What does savage mean?", "savage means?", "define savage"],
+        "responses": ["Savage is a slang term used to describe someone who doesn't hold back and speaks their mind without hesitation.", "Savage: someone who is fearless in expressing their thoughts; speaks boldly.", "Being savage often implies being straightforward and unapologetic."]
+    },
+
+    {
+        "tag": "contoh_savage",
+        "patterns": ["examples of savage", "give examples of savage", "savage sentence examples"],
+        "responses": ["“He's so savage; he always speaks his mind, no matter what.” (“Dia sangat savage; dia selalu mengatakan pikirannya, tanpa memikirkan apa pun.”)"]
+    },
+    
+    {
+        "tag": "flex",
+        "patterns": ["flex", "What does flex mean?", "flex means?", "define flex"],
+        "responses": ["Flex is a slang term used to show off or boast, often in a flashy or extravagant manner.", "Flex: showcasing or bragging about one's possessions or achievements.", "When someone says 'flex,' it usually involves displaying something impressive."]
+    },
+
+    {
+        "tag": "contoh_flex",
+        "patterns": ["examples of flex", "give examples of flex", "flex sentence examples"],
+        "responses": ["“She loves to flex her new car every chance she gets.” (“Dia suka flex mobil barunya setiap kesempatan yang dia dapatkan.”)"]
+    },
+    
+    {
+        "tag": "squad",
+        "patterns": ["squad", "What does squad mean?", "squad means?", "define squad"],
+        "responses": ["Squad refers to a group of close friends or companions who often hang out together.", "Squad: a tight-knit group of friends or associates.", "Heading out with the squad implies going out with a close group of people."]
+    },
+
+    {
+        "tag": "contoh_squad",
+        "patterns": ["examples of friyay", "give examples of friyay", "friyay sentence examples"],
+        "responses": ["“Heading out with the squad tonight – it's always a good time.” (“Pergi bersama squad malam ini – selalu menyenangkan.”)"]
+    },
+    
+    {
+        "tag": "lituation",
+        "patterns": ["lituation", "What does lituation mean?", "lituation means?", "define lituation"],
+        "responses": ["Lituation is a blend of 'lit' and 'situation,' describing a highly enjoyable or exciting situation.", "Lituation: a situation that is lively, fun, and filled with positive energy.", "Last night was a lituation implies the events of the night were exceptionally enjoyable."]
+    },
+
+    {
+        "tag": "contoh_lituation",
+        "patterns": ["examples of lituation", "give examples of lituation", "lituation sentence examples"],
+        "responses": ["“Last weekend's party was a lituation; the music was pumping, and everyone was dancing.” (“Pesta akhir pekan lalu adalah lituation; musiknya menggelegar, dan semua orang menari.”)"]
+    },
+    
+    {
+        "tag": "ghosted",
+        "patterns": ["ghosted", "What does ghosted mean?", "ghosted means?", "define ghosted"],
+        "responses": ["Ghosted is a slang term used to describe the act of abruptly ending all communication with someone.", "Ghosted: when someone suddenly stops responding or interacting without explanation.", "If someone says they got ghosted, it means they were ignored or avoided."]
+    },
+
+    {
+        "tag": "contoh_ghosted",
+        "patterns": ["examples of ghosted", "give examples of ghosted", "ghosted sentence examples"],
+        "responses": ["“After the argument, she completely ghosted me; no calls, no texts, nothing.” (“Setelah pertengkaran, dia benar-benar ghosted aku; tidak ada telepon, tidak ada pesan, sama sekali.”)"]
+    },
+    
+    {
+        "tag": "dope",
+        "patterns": ["dope", "What does dope mean?", "dope means?", "define dope"],
+        "responses": ["Dope is a slang term used to describe something that is cool, excellent, or impressive.", "Dope: outstanding, awesome, or stylish.", "Calling something 'dope' is a way of expressing admiration or approval."]
+    },
+
+    {
+        "tag": "contoh_dope",
+        "patterns": ["examples of dope", "give examples of dope", "dope sentence examples"],
+        "responses": ["“Check out my new sneakers; aren't they dope?” (“Lihat sepatu baruku; apakah mereka tidak keren?”)"]
+    },
+
+    {
+        "tag": "vibe",
+        "patterns": ["vibe", "What does vibe mean?", "vibe means?", "define vibe"],
+        "responses": ["Vibe is a slang term used to describe the atmosphere or feeling of a place, situation, or person.", "Vibe: the energy or mood that something or someone gives off.", "The beach has such a chill vibe; it's relaxing and peaceful."]
+    },
+
+    {
+        "tag": "contoh_vibe",
+        "patterns": ["examples of vibe", "give examples of vibe", "vibe sentence examples"],
+        "responses": ["“The club has a great vibe tonight; everyone is having a good time.” (“Klub ini memiliki energi yang bagus malam ini; semua orang sedang bersenang-senang.”)"]
+    },
+    
+    {
+        "tag": "cap",
+        "patterns": ["cap", "What does cap mean?", "cap means?", "define cap"],
+        "responses": ["Cap is a slang term used to call out a lie or exaggeration.", "Cap: indicates that someone is not telling the truth; falsehood.", "He said he won the lottery, but I think that's cap."]
+    },
+
+    {
+        "tag": "contoh_cap",
+        "patterns": ["examples of cap", "give examples of cap", "cap sentence examples"],
+        "responses": ["“I asked him if he finished the project, and he said yes, but I think that's cap.” (“Aku bertanya padanya apakah dia menyelesaikan proyek itu, dan dia bilang ya, tapi aku rasa itu bohong.”)"]
+    },
+
+    {
+        "tag": "flexin",
+        "patterns": ["flexin", "What does flexin mean?", "flexin means?", "define flexin"],
+        "responses": ["Flexin' is a slang term used to show off or boast, often in a confident or bragging manner.", "Flexin': displaying confidence and pride in one's achievements or possessions."]
+    },
+
+    {
+        "tag": "contoh_flexin",
+        "patterns": ["examples of flexin", "give examples of flexin", "flexin sentence examples"],
+        "responses": ["“She's always flexin' her riches on social media.” (“Dia selalu memamerkan kekayaannya di media sosial.”)"]
+    },
+
+    {
+     "tag": "thanks",
+     "patterns": ["thanks", "thank you", "thank you very much", "okay", "ok", "okay then", "okay thanks", "thanks Yio!"],
+     "responses": ["Thank you for using this chatbot! If you have any more questions, don't hesitate to return. Keep up the good work!", "You're welcome! Feel free to come back if you have more questions. Have a delightful day!","See ya, brainiac! Keep rockin', and remember, the admin's got your back!", "My pleasure, glad to have a study date with you! Keep succeeding <3"]
+    },
+
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": ["See you later", "Have a nice day", "Bye! Come back again", "Bye bye, sharp one! Stay awesome, and remember, I'm your biggest fan!", "Einstein, take care! Keep hustlin', and know that Yio here to support you!"]
+    }
+]
+}
